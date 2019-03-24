@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="Controller.LoginController">
+    <top>
+        <HBox fx:id="titlebar" alignment="CENTER" styleClass="titlebar">
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label id="titleLbl" style="-fx-font-weight: 700" text="Comprehensive Academic System"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <JFXButton fx:id="minimizeBtn" onAction="#minimizeStage" styleClass="transparent-btn" text="-"/>
+            <JFXButton fx:id="maximizeBtn" onAction="#maximizeStage" styleClass="transparent-btn" text="m"/>
+            <JFXButton fx:id="closeBtn" onAction="#closeStage" styleClass="transparent-btn" text="x"/>
+        </HBox>
+    </top>
+    <center>
+        <GridPane alignment="CENTER" hgap="10" styleClass="main" vgap="10">
+            <!--TODO: Insert Image View here-->
+            <Label text="Welcome to this Stupid System" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <JFXTextField promptText="enter your email address" translateX="20.0" GridPane.columnIndex="0"
+                          GridPane.rowIndex="2">
+                <effect>
+                    <Bloom/>
+                </effect>
+                <padding>
+                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                </padding>
+            </JFXTextField>
+            <columnConstraints>
+                <ColumnConstraints/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+            </rowConstraints>
+        </GridPane>
+    </center>
+</BorderPane>

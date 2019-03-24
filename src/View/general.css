@@ -1,0 +1,40 @@
+.root {
+    -fx-background-radius: 10;
+    -fx-background-color: #e6e6ef;
+}
+
+.main {
+    -fx-border-width: 0 2 2 2;
+    -fx-border-radius: 0 0 8 8;
+    -fx-border-color: blue;
+}
+
+.titlebar {
+    /*-fx-background-color: #eee;*/
+    -fx-background-color: #aaf;
+    -fx-background-radius: 10 10 0 0;
+    -fx-border-width: 2 2 0 2;
+    -fx-border-color: #ea5;
+    -fx-border-radius: 5 5 0 0;
+}
+
+.transparent-btn {
+    -fx-border-color: transparent;
+    /*-fx-border-color: blue;*/
+    -fx-border-width: 0 2 0 2;
+    -fx-background-radius: 0 5 0 5;
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 1em; /* 12 */
+    -fx-text-fill: #828282;
+}
+
+.transparent-btn:hover {
+    -fx-background-color: #d22;
+    -fx-text-fill: #fff;
+}
+
+.transparent-btn:pressed {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
