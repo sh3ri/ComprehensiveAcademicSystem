@@ -35,6 +35,9 @@ public class Class {
         return members.add(student);
     }
 
+    {
+    }
+
     public ArrayList<Student> getMembers() {
         return members;
     }
